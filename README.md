@@ -1,43 +1,50 @@
-# Chirpy Starter
+# 🏛️ Stoicus Cyber | Purple Team 
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+<p align="center">
+  <img src="assets/img/logo.png" width="200" alt="Stoicus Cyber Logo">
+</p>
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+> **"Analizando el ataque para fortalecer la infraestructura."** > Mi bitácora técnica sobre Administración de Sistemas Informáticos en Red (ASIR), Operaciones de Seguridad (SOC) y Pentesting.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## 🔍 Descubre más sobre mi trabajo
+Si quieres ver mis **writeups de máquinas**, mis **guías de hardening** o cómo tengo montado mi **laboratorio de Purple Team**, no te quedes solo aquí. 
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+👉 **[Entra en Stoicus Cyber y explora mi bitácora técnica](https://zilr4c.github.io/about/)** 🏛️
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+*En el blog ire documentando proyectos y analisis de writeups.*
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+---
 
-## Usage
+## 🚀 Áreas de Enfoque
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+### 🔵 Blue Team (Defensa)
+* Monitorización de eventos y análisis de logs.
+* Hardening de sistemas Linux y Windows.
+* Despliegue de soluciones SIEM (splunk).
 
-## Contributing
+### 🔴 Red Team (Ofensiva)
+* Explotación de vulnerabilidades y escalada de privilegios.
+* Writeups detallados de máquinas (HTB/TryHackMe).
+* Seguridad en entornos de Active Directory.
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+## 📂 Estructura del Blog
 
-## License
+Este repositorio contiene mi blog personal construido con **Jekyll** y el tema **Chirpy**, desplegado automáticamente mediante **GitHub Actions**.
 
-This work is published under [MIT][mit] License.
+* `/assets/img/posts/` - Evidencias y diagramas de laboratorios.
+* `_posts/` - Writeups, tutoriales y reflexiones técnicas.
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+## 🛠️ Tecnologías & Herramientas
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Bash](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/humberto-boscan">LinkedIn</a> 
+  • 
+  <a href="https://zilr4c.github.io/">Visita mi Blog</a>
+</p>
