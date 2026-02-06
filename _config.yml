@@ -14,9 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: CyberSecurity Blog # the main title
+title: Stoicus Cyber # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Aspirante a Purple Team | Estudiante de ASIR | Analizando el ataque para fortalecer la defensa # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
