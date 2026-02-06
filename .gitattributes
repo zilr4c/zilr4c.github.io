@@ -14,3 +14,23 @@
 *.png binary
 *.jpg binary
 *.ico binary
+
+# --- Configuración para limpiar las estadísticas (Linguist) ---
+
+# Ocultar carpetas internas del tema
+_includes/* linguist-vendored
+_layouts/* linguist-vendored
+_sass/* linguist-vendored
+assets/* linguist-vendored
+scripts/* linguist-vendored
+_tabs/* linguist-vendored
+
+# Ocultar archivos de configuración de Ruby y Jekyll
+Gemfile linguist-vendored
+Gemfile.lock linguist-vendored
+_config.yml linguist-vendored
+feed.xml linguist-vendored
+sitemap.xml linguist-vendored
+
+# Tratar los archivos Markdown como contenido principal
+*.md linguist-documentation=false
