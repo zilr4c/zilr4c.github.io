@@ -1,50 +1,57 @@
-# 🏛️ Stoicus Cyber | Purple Team 
+# 🏛️ Stoicus Cyber | Purple Team Lab & Research
 
 <p align="center">
-  <img src="assets/img/logo.png" width="200" alt="Stoicus Cyber Logo">
+<img src="assets/img/logo.png" width="500" alt="Stoicus Cyber Logo">
 </p>
 
-> **"Analizando el ataque para fortalecer la infraestructura."** > Mi bitácora técnica sobre Administración de Sistemas Informáticos en Red (ASIR), Operaciones de Seguridad (SOC) y Pentesting.
-
-## 🔍 Descubre más sobre mi trabajo
-Si quieres ver mis **writeups de máquinas**, mis **guías de hardening** o cómo tengo montado mi **laboratorio de Purple Team**, no te quedes solo aquí. 
-
-👉 **[Entra en Stoicus Cyber y explora mi bitácora técnica](https://zilr4c.github.io/about/)** 🏛️
-
-*En el blog ire documentando proyectos y analisis de writeups.*
+> **"Analizando el ataque para fortalecer la infraestructura."** > Espacio dedicado a la documentación técnica sobre Seguridad Ofensiva, Respuesta ante Incidentes y Administración de Sistemas (ASIR).
 
 ---
 
-## 🚀 Áreas de Enfoque
+## 🔍 Bitácora de Investigación
 
-### 🔵 Blue Team (Defensa)
-* Monitorización de eventos y análisis de logs.
-* Hardening de sistemas Linux y Windows.
-* Despliegue de soluciones SIEM (splunk).
+Este repositorio contiene el código fuente y los activos de mi blog profesional. Aquí documento mi metodología de trabajo, combinando la mentalidad analítica del **Blue Team** con la ejecución táctica del **Red Team**.
 
-### 🔴 Red Team (Ofensiva)
-* Explotación de vulnerabilidades y escalada de privilegios.
-* Writeups detallados de máquinas (HTB/TryHackMe).
-* Seguridad en entornos de Active Directory.
+👉 **[Explorar Stoicus Cyber](https://zilr4c.github.io/)** 🏛️
 
-## 📂 Estructura del Blog
+---
 
-Este repositorio contiene mi blog personal construido con **Jekyll** y el tema **Chirpy**, desplegado automáticamente mediante **GitHub Actions**.
+## 🚀 Áreas de Enfoque Técnico
 
-* `/assets/img/posts/` - Evidencias y diagramas de laboratorios.
-* `_posts/` - Writeups, tutoriales y reflexiones técnicas.
+### 🔵 Defensive Operations (Blue Team)
+
+* **Threat Hunting & SIEM:** Monitorización avanzada de eventos y análisis de logs (Splunk/ELK).
+* **Hardening:** Aseguramiento de infraestructuras críticas Linux y Windows.
+* **DFIR:** Metodologías de triage y respuesta ante incidentes basadas en el framework de **BTL1**.
+
+### 🔴 Offensive Operations (Red Team)
+
+* **Pentesting:** Compromiso de sistemas y escalada de privilegios bajo estándares de **OSCP+**.
+* **Active Directory:** Explotación de vectores de ataque en entornos de dominio.
+* **Web Security:** Investigación actual enfocada en la certificación **eWPTXv3**.
+
+### 🤖 Automation & Scripting
+
+* **Security Tooling:** Desarrollo de herramientas en **Bash y Python** para optimizar la enumeración (ej. `autonmap`).
+* **Data Driven Security:** Aplicación de consultas **SQL** para el análisis de grandes volúmenes de datos operativos.
+
+---
 
 ## 🛠️ Tecnologías & Herramientas
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Bash](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
+## 📂 Estructura del Proyecto
 
+El blog está construido con **Jekyll** utilizando el tema **Chirpy**, optimizado para documentación técnica limpia.
+
+* `_posts/` - Artículos técnicos, writeups de máquinas y guías de hardening.
+* `assets/img/posts/` - Diagramas de red, evidencias de explotación y flujos de trabajo.
+
+---
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/humberto-boscan">LinkedIn</a> 
-  • 
-  <a href="https://zilr4c.github.io/">Visita mi Blog</a>
+<a href="[https://www.linkedin.com/in/humberto-boscan](https://www.linkedin.com/in/humberto-boscan)"><b>LinkedIn</b></a>
+•
+<a href="[https://zilr4c.github.io/about/](https://zilr4c.github.io/about/)"><b>Sobre mí</b></a>
 </p>
+
