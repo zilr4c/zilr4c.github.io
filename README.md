@@ -1,7 +1,7 @@
 # 🏛️ Stoicus Cyber | Purple Team Lab & Research
 
 <p align="center">
-<img src="assets/img/logo.png" width="500" alt="Stoicus Cyber Logo">
+<img src="assets/img/logo.png" width="300" alt="Stoicus Cyber Logo">
 </p>
 
 > **"Analizando el ataque para fortalecer la infraestructura."** > Espacio dedicado a la documentación técnica sobre Seguridad Ofensiva, Respuesta ante Incidentes y Administración de Sistemas (ASIR).
