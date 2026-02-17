@@ -14,13 +14,13 @@ Actualmente, compagino mis estudios superiores en ASIR (Administración de Siste
 ## Certificaciones
 Mi camino en la ciberseguridad se divide en dos pilares fundamentales, permitiéndome abordar los retos desde una perspectiva de **Purple Team**
 
-> #### 🔴 Offensive Operations (Red Team)
-> * **OSCP+** - Offensive Security Certified Professional
-> * **eCPPTv2** - eLearnSecurity Certified Professional Penetration Tester
-> * **OSWP** - Offensive Security Wireless Professional
-> * **eJPTv2** - eLearnSecurity Junior Penetration Tester
-> #### 🔵 Defensive Operations (Blue Team)
-> * **BTL1** - Blue Team Level 1
+#### 🔴 Offensive Operations (Red Team)
+* **OSCP+** - Offensive Security Certified Professional
+* **eCPPTv2** - eLearnSecurity Certified Professional Penetration Tester
+* **OSWP** - Offensive Security Wireless Professional
+* **eJPTv2** - eLearnSecurity Junior Penetration Tester
+#### 🔵 Defensive Operations (Blue Team)
+* **BTL1** - Blue Team Level 1
 
 ## Lo que encontrarás aquí
 En este blog compartiré proyectos de aprendizaje y contenido técnico que espero ayude a otros en la comunidad:
