@@ -19,6 +19,7 @@ Mi camino en la ciberseguridad se divide en dos pilares fundamentales, permitié
 * **eCPPTv2** - eLearnSecurity Certified Professional Penetration Tester
 * **OSWP** - Offensive Security Wireless Professional
 * **eJPTv2** - eLearnSecurity Junior Penetration Tester
+  
 #### 🔵 Defensive Operations (Blue Team)
 * **BTL1** - Blue Team Level 1
 
