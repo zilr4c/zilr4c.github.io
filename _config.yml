@@ -16,7 +16,7 @@ timezone:
 
 title: Stoicus Cyber # the main title
 
-tagline: Aspirante a Purple Team | Estudiante de ASIR | Analizando el ataque para fortalecer la defensa # it will display as the subtitle
+tagline: Aspirante a Purple Team | Estudiante de ASIR | Offensive Security Enthusiast & Defensive Strategy # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
