@@ -23,7 +23,7 @@ Mi camino en la ciberseguridad se divide en dos pilares fundamentales, permitié
 > * **BTL1** - Blue Team Level 1
 
 ## Lo que encontrarás aquí
-En este blog compartire proyectos de aprendizaje y contenido técnico que espero ayude a otros en la comunidad:
+En este blog compartiré proyectos de aprendizaje y contenido técnico que espero ayude a otros en la comunidad:
 * Proyectos personales.
 * **Writeups** detallados de máquinas (HTB, TryHackMe).
 * Análisis de herramientas y flujos de trabajo de **Pentesting y Blue Teaming**.
