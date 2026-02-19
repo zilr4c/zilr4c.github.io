@@ -1,6 +1,6 @@
 ---
 title: "Lab de Kerberos: Red Team vs Blue Team (1/3) - Setup, Vulnerabilidades y Telemetría"
-date: 2026-02-19 06:40:00 +0000
+date: 2026-02-19 05:00:00 +0100
 categories: [Cybersecurity, Lab Setup - Purple Team]
 tags: [active directory, sysmon, kerberoasting, as-rep roasting, windows server 2022, homelab]
 ---
