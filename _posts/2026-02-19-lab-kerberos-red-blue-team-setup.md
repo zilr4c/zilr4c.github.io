@@ -403,6 +403,7 @@ Haciendo un breve repaso, ya tenemos:
 
 Tener el escenario listo es el 50% del camino. En las siguientes entregas, pasaremos de la configuración técnica a la ejecución táctica:
 
-**Parte 2 | El Ataque:** En el siguiente post, adoptaremos un rol de **Red Team (ofensivo)**. Utilizaremos herramientas de explotación para solicitar tickets de servicio (**TGS**) y realizaremos cracking offline mediante ataques de fuerza bruta y diccionarios para comprometer la cuenta `svc_sql`.
 
-**Parte 3 | La Defensa:** Volveremos al bando del **Blue Team**. Analizaremos la telemetría recolectada por Sysmon y los eventos de Kerberos, identificaremos los patrones específicos de ambos ataques y aprenderemos a correlacionar datos para detectar estas técnicas antes de que el atacante logre el movimiento lateral.
+- **Parte 2 - El Ataque:** En el siguiente post, adoptaremos un rol de **Red Team (ofensivo)**. Utilizaremos herramientas de explotación para solicitar tickets de servicio (**TGS**) y realizaremos cracking offline mediante ataques de fuerza bruta y diccionarios para comprometer la cuenta `svc_sql`.
+
+- **Parte 3 - La Defensa:** Volveremos al bando del **Blue Team**. Analizaremos la telemetría recolectada por Sysmon y los eventos de Kerberos, identificaremos los patrones específicos de ambos ataques y aprenderemos a correlacionar datos para detectar estas técnicas antes de que el atacante logre el movimiento lateral.
