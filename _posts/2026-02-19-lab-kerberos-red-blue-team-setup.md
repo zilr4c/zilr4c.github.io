@@ -39,6 +39,7 @@ Descargaremos la imagen ISO oficial de Windows Server 2022 desde el centro de ev
 - [Windows Server 2022](https://www.microsoft.com/es-es/evalcenter/download-windows-server-2022)
 
 - **Selección**: Escogemos la edición de 64 bits.
+  
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/descarga.png){: width="400" }
 
 
@@ -47,15 +48,17 @@ Descargaremos la imagen ISO oficial de Windows Server 2022 desde el centro de ev
 Al crear la VM, omitiremos los pasos genéricos del asistente y nos centraremos en la asignación de recursos y el aislamiento de red, que son las piezas críticas para nuestro laboratorio.
 
 1. Click Archivo > "Nueva máquina virtual"
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/file.png){: width="400" }
 
-2. Seleccionamos nuestra ISO de Windows Server 2022 y dejamos las configuraciones básicas por defecto (nombre de la máquina, disco, etc.)
+1. Seleccionamos nuestra ISO de Windows Server 2022 y dejamos las configuraciones básicas por defecto (nombre de la máquina, disco, etc.)
 
-3. **Hardware y Red (Importante):** En la personalización del hardware, ajustamos los siguientes parámetros:
+2. **Hardware y Red (Importante):** En la personalización del hardware, ajustamos los siguientes parámetros:
 
    - **Memoria RAM:** 4 GB (lo mínimo recomendado para que el Domain Controller y los servicios de telemetría funcionen con fluidez).
 
    - **Adaptador de Red:** NAT. Esto aísla nuestro entorno de pruebas de nuestra red doméstica, permitiendo al mismo tiempo que la máquina atacante (Kali) y el servidor se comuniquen entre sí y tengan salida a Internet para descargar herramientas.
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/image-1.png)
 
 
@@ -73,6 +76,7 @@ Arrancamos la máquina virtual y comenzamos la instalación. Omitiendo los pasos
 #### Configuración de la Cuenta de Administrador
 
 Una vez finalizada la copia de archivos y el primer reinicio, el sistema nos solicitará establecer la contraseña para la cuenta de Administrator.
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/pass.png){: width="600" }
 
   
@@ -80,6 +84,7 @@ Una vez finalizada la copia de archivos y el primer reinicio, el sistema nos sol
 ### 3. Inicio de Sesión Inicial
 
 Con el sistema operativo instalado, procedemos a nuestro primer inicio de sesión.
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/sesion.png){: width="300" }
 
 **Tip para VMware:** Para enviar el comando `Ctrl + Alt + supr` a la máquina virtual sin bloquear tu PC anfitrión, utiliza la combinación `Ctrl + Alt + Insert`.
@@ -103,6 +108,7 @@ Por defecto, Windows asigna un nombre aleatorio (como WIN-AS829...). En un entor
 #### Verificación del nombre actual
 
 Para abrir la consola de administración, utilizamos el atajo Win + R, escribimos powershell y pulsamos Enter.
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/powershell.png){: width="300" }
 
 En la consola, ejecutamos el siguiente comando para ver el nombre asignado actualmente:
@@ -246,9 +252,11 @@ El Kerberoasting es una técnica de post-explotación que permite crackear offli
 Primero, accederemos a la consola de administración de usuarios.
 
 1. Pulsa `Win + R`, escribe `dsa.msc` y presiona Enter.
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/ad-panel1.png){: width="400" }
 
-2. Esto abrirá la consola de Active Directory Users and Computers (ADUC).
+1. Esto abrirá la consola de Active Directory Users and Computers (ADUC).
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/ad-panel2.png)
 
 #### Creación de Usuarios
@@ -261,6 +269,7 @@ Desplegaremos tres perfiles específicos para cubrir distintos vectores:
 - **Persistencia/Pivote:** Un usuario con pre-autenticación desactivada (AS-REP Roasting).
 
 - **Escalada de Privilegios:** Una cuenta de servicio con SPN y permisos elevados (Kerberoasting).
+
 ```powershell
 # 1. Acceso Inicial: Password Spraying (Contraseña Débil)
 New-ADUser -Name "Scott Marketing" -SamAccountName "scott" -Description "Vulnerable a brute force" -Enabled $true -PasswordNeverExpires $true -AccountPassword (ConvertTo-SecureString "Marketing96" -AsPlainText -Force)
@@ -394,6 +403,6 @@ Haciendo un breve repaso, ya tenemos:
 
 Tener el escenario listo es el 50% del camino. En las siguientes entregas, pasaremos de la configuración técnica a la ejecución táctica:
 
-- **Parte 2 | El Ataque:** En el siguiente post, adoptaremos un rol de **Red Team (ofensivo)**. Utilizaremos herramientas de explotación para solicitar tickets de servicio (**TGS**) y realizaremos cracking offline mediante ataques de fuerza bruta y diccionarios para comprometer la cuenta `svc_sql`.
+**Parte 2 | El Ataque:** En el siguiente post, adoptaremos un rol de **Red Team (ofensivo)**. Utilizaremos herramientas de explotación para solicitar tickets de servicio (**TGS**) y realizaremos cracking offline mediante ataques de fuerza bruta y diccionarios para comprometer la cuenta `svc_sql`.
 
-- **Parte 3 | La Defensa:** Volveremos al bando del **Blue Team**. Analizaremos la telemetría recolectada por Sysmon y los eventos de Kerberos, identificaremos los patrones específicos de ambos ataques y aprenderemos a correlacionar datos para detectar estas técnicas antes de que el atacante logre el movimiento lateral.
+**Parte 3 | La Defensa:** Volveremos al bando del **Blue Team**. Analizaremos la telemetría recolectada por Sysmon y los eventos de Kerberos, identificaremos los patrones específicos de ambos ataques y aprenderemos a correlacionar datos para detectar estas técnicas antes de que el atacante logre el movimiento lateral.
