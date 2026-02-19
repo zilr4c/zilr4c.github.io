@@ -160,16 +160,15 @@ Utilizaremos un script de PowerShell para automatizar el cambio. Es vital que el
 
 ```powershell
 # 1. Definimos las variables de red
-$IP = "192.168.122.10"       # La IP estática que desees
-$Mask = "24"               # Equivale a 255.255.255.0
-$Gateway = "192.168.122.2"   # Gateway de VMware NAT
-$DNS = "127.0.0.1"         # Apuntamos al localhost para el futuro Active Directory 
+$IP = "192.168.122.10"      # La IP estática que desees
+$Mask = "24"                # Equivale a 255.255.255.0
+$Gateway = "192.168.122.2"  # Gateway de VMware NAT
+$DNS = "127.0.0.1"          # Apuntamos al localhost para el futuro Active Directory 
 
 # 2. Identificamos la interfaz de red activa (Ethernet)
 $Interface = Get-NetAdapter | Where-Object {$_.Status -eq "Up"} | Select-Object -First 1
 
 # 3. Aplicamos la configuración de IP y Gateway
-
 # Nota: Si ya tenías una IP estática, esto podría dar error, usa 'Set-NetIPAddress' en su lugar si es el caso.
 New-NetIPAddress -InterfaceIndex $Interface.ifIndex -IPAddress $IP -PrefixLength $Mask -DefaultGateway $Gateway
 
@@ -179,6 +178,7 @@ Set-DnsClientServerAddress -InterfaceIndex $Interface.ifIndex -ServerAddresses $
 Write-Host "Configuración de red estática completada con éxito." -ForegroundColor Green
 
 ```
+
 ![alt text](../assets/img/posts/windows-server-2022-sysmon-lab/static_ip.png){: width="400" }
 
   
@@ -365,7 +365,7 @@ Tras la instalación, Sysmon comenzará a registrar eventos inmediatamente. Para
 
 > **¿Qué buscar?** El Evento ID 1 indica la creación de un nuevo proceso. Es la señal definitiva de que Sysmon está monitorizando la actividad del sistema.
 > 
-### Paso Extra: Preparando la Auditoría
+### 3. Paso Extra: Preparando la Auditoría
 Para que nuestra detección en la **Fase 3** sea efectiva, no basta con Sysmon. Necesitamos que Windows registre explícitamente tanto las solicitudes de tickets iniciales (TGT) como las de servicio (TGS).
 
 Por defecto, esta auditoría es insuficiente. Vamos a activar las subcategorías necesarias para capturar los dos eventos clave: el **Event ID 4769** (la "pistola humeante" del Kerberoasting) y el **Event ID 4768** (vital para detectar AS-REP Roasting).
