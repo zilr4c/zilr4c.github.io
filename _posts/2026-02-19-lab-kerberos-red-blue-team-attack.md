@@ -95,7 +95,7 @@ sudo apt update && sudo apt upgrade -y
 
 ## Fase 2 - Enumeración y Reconocimiento de Activos
 
-En esta fase solo realizo un escaneo basico de puertos para que se pueda entender como se podria hacer. sin embargo en una auditoria se realizaria un escaneo exhaustivo de cada puerto detectando sus versiones y servicios a los cuales luego se verificaria para ver si son vulnerables sus versiones a algun tipo de vulnerabilidad.
+En esta fase solo realizo un escaneo básico de puertos para que se pueda entender cómo se podría hacer. Sin embargo, en una auditoría se realizaría un escaneo exhaustivo de cada puerto, detectando sus versiones y servicios, los cuales luego se verificarían para ver si son vulnerables a algún tipo de vulnerabilidad
 
 
 ### 1. Detectando puertos abiertos (nmap)
