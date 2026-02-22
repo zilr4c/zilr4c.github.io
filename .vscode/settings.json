@@ -29,7 +29,7 @@
 
   // --- CONFIGURACIÓN DE IMÁGENES ---
   "markdown.copyFiles.destination": {
-    "**/*.md": "/assets/img/posts/windows-server-2022-sysmon-lab/${fileName}"
+    "**/*.md": "/assets/img/posts/kerberos-lab-attack/${fileName}"
   },
   "markdown.copyFiles.pastedFileName": "img-${date:mmSSS}",
   "editor.pasteAs.enabled": true
