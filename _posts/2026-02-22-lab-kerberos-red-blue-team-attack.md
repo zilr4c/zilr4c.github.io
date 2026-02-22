@@ -22,7 +22,7 @@ Tras haber desplegado nuestro laboratorio y configurado las vulnerabilidades en 
 Asumiremos un escenario de **Caja Negra (Black Box)**, donde solo contamos con una IP dentro de la red. A través de este ejercicio, validaremos la efectividad de los ataques de abuso de protocolo que mencionamos anteriormente.
 
 
-> **Recordatorio de Seguridad:** Este laboratorio se realiza en un entorno controlado. La meta es entender la mentalidad del atacante para construir defensas más robustas en la parte (3/3).
+> **Recordatorio de Seguridad:** El contenido de este post tiene fines estrictamente educativos. Las pruebas se ejecutan en un laboratorio aislado con el fin de analizar vectores de ataque y fortalecer la postura defensiva, la cual trataremos en la parte final del proyecto (3/3).
 {: .prompt-tip }
 
 ## Fase 1 - Entorno de ataque (Kali Linux)
