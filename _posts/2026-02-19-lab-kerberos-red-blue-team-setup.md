@@ -48,17 +48,17 @@ Descargaremos la imagen ISO oficial de Windows Server 2022 desde el centro de ev
 
 Al crear la VM, omitiremos los pasos genéricos del asistente y nos centraremos en la asignación de recursos y el aislamiento de red, que son las piezas críticas para nuestro laboratorio.
 
-1. Click Archivo > "Nueva máquina virtual"
+-  Click Archivo > "Nueva máquina virtual" 
 
 ![alt text](../assets/img/posts/kerberos-lab-setup/file.png){: width="400" }
+  
+-  Seleccionamos nuestra ISO de Windows Server 2022 y dejamos las configuraciones básicas por defecto (nombre de la máquina, disco, etc.)
 
-1. Seleccionamos nuestra ISO de Windows Server 2022 y dejamos las configuraciones básicas por defecto (nombre de la máquina, disco, etc.)
+- **Hardware y Red (Importante):** En la personalización del hardware, ajustamos los siguientes parámetros:
 
-2. **Hardware y Red (Importante):** En la personalización del hardware, ajustamos los siguientes parámetros:
+    - **Memoria RAM:** 4 GB (lo mínimo recomendado para que el Domain Controller y los servicios de telemetría funcionen con fluidez).
 
-   - **Memoria RAM:** 4 GB (lo mínimo recomendado para que el Domain Controller y los servicios de telemetría funcionen con fluidez).
-
-   - **Adaptador de Red (NAT):** Crea una red privada para tus máquinas virtuales. Esto las mantiene invisibles para el resto de dispositivos de tu casa (como otros móviles o PCs), evitando "ruido" externo. Al mismo tiempo, permite que tu ordenador real y las máquinas del laboratorio se comuniquen entre sí y tengan salida a Internet para descargar herramientas.
+    - **Adaptador de Red (NAT):** Crea una red privada para tus máquinas virtuales. Esto las mantiene invisibles para el resto de dispositivos de tu casa (como otros móviles o PCs), evitando "ruido" externo. Al mismo tiempo, permite que tu ordenador real y las máquinas del laboratorio se comuniquen entre sí y tengan salida a Internet para descargar herramientas.
 
 ![alt text](../assets/img/posts/kerberos-lab-setup/image-1.png)
 
@@ -255,11 +255,11 @@ El Kerberoasting es una técnica de post-explotación que permite crackear offli
 
 Primero, accederemos a la consola de administración de usuarios.
 
-1. Pulsa `Win + R`, escribe `dsa.msc` y presiona Enter.
+-  Pulsa `Win + R`, escribe `dsa.msc` y presiona Enter.
 
 ![alt text](../assets/img/posts/kerberos-lab-setup/ad-panel1.png){: width="400" }
 
-1. Esto abrirá la consola de Active Directory Users and Computers (ADUC).
+-  Esto abrirá la consola de Active Directory Users and Computers (ADUC).
 
 ![alt text](../assets/img/posts/kerberos-lab-setup/ad-panel2.png)
 
