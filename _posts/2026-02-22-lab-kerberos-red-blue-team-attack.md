@@ -39,9 +39,9 @@ Seleccionamos la plataforma y empezara la descarga automaticamente.
 ### 2. Configuración de la Máquina Virtual (VMware)
 Al utilizar una máquina virtual preconstruida, no necesitamos crear una nueva desde cero. Simplemente debemos "importar" la configuración existente.
 
-1. **Extracción:** Descomprime el archivo .zip descargado en una carpeta permanente (evita la carpeta de Descargas).
+- **Extracción:** Descomprime el archivo .zip descargado en una carpeta permanente (evita la carpeta de Descargas).
 
-2. **Importación:** Haz doble clic en el archivo con extensión .vmx. Esto abrirá VMware y cargará la máquina automáticamente en tu biblioteca.
+-  **Importación:** Haz doble clic en el archivo con extensión .vmx. Esto abrirá VMware y cargará la máquina automáticamente en tu biblioteca.
 
 <div class="row justify-content-center align-items-center">
   <div class="col-md-5 text-center">
@@ -52,7 +52,7 @@ Al utilizar una máquina virtual preconstruida, no necesitamos crear una nueva d
   </div>
 </div>
 
-1. **Hardware y Red (Importante):** 
+-  **Hardware y Red (Importante):** 
 Antes de encenderla, debemos ajustar los recursos para garantizar la estabilidad del laboratorio:
 
    - **Memoria RAM:** Se recomiendan 4 GB. Es el punto de equilibrio ideal para ejecutar herramientas de escaneo y explotación sin ralentizar el sistema anfitrión.
