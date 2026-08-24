@@ -4,7 +4,8 @@
 <img src="assets/img/logo.png" width="300" alt="Stoicus Cyber Logo">
 </p>
 
-> **"Analizando el ataque para fortalecer la infraestructura."** > Espacio dedicado a la documentación técnica sobre Seguridad Ofensiva, Respuesta ante Incidentes y Administración de Sistemas (ASIR).
+> **"Analizando el ataque para fortalecer la infraestructura."**  
+> Espacio dedicado a la documentación técnica sobre Seguridad Ofensiva, Respuesta ante Incidentes y Administración de Sistemas (ASIR).
 
 ---
 
@@ -28,7 +29,7 @@ Este repositorio contiene el código fuente y los activos de mi blog profesional
 
 * **Pentesting:** Compromiso de sistemas y escalada de privilegios bajo estándares de **OSCP+**.
 * **Active Directory:** Explotación de vectores de ataque en entornos de dominio.
-* **Web Security:** Investigación actual enfocada en la certificación **eWPTXv3**.
+* **Web Security:** Pentesting web avanzado, análisis de vulnerabilidades complejas y evasión de controles basado en **eWPTXv3**.
 
 ### 🤖 Automation & Scripting
 
@@ -39,6 +40,7 @@ Este repositorio contiene el código fuente y los activos de mi blog profesional
 
 ## 🛠️ Tecnologías & Herramientas
 
+---
 
 ## 📂 Estructura del Proyecto
 
@@ -50,8 +52,7 @@ El blog está construido con **Jekyll** utilizando el tema **Chirpy**, optimizad
 ---
 
 <p align="center">
-<a href="[https://www.linkedin.com/in/humberto-boscan](https://www.linkedin.com/in/humberto-boscan)"><b>LinkedIn</b></a>
+<a href="https://www.linkedin.com/in/humberto-boscan"><b>LinkedIn</b></a>
 •
-<a href="[https://zilr4c.github.io/about/](https://zilr4c.github.io/about/)"><b>Sobre mí</b></a>
+<a href="https://zilr4c.github.io/about/"><b>Sobre mí</b></a>
 </p>
-
